@@ -1,2 +1,2 @@
-include ':app'
+include ':app',':timepicker',':stackcardview'
 rootProject.name = "ToolUtils"
