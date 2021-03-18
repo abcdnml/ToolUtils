@@ -1,0 +1,42 @@
+ext {
+    versions = [
+            appVersionCode   : 10,
+            appVersionName   : '0.0.1.0',
+
+            timepickerCode   : 10,
+            timepickerName   : '0.0.1.0',
+
+            stackcardviewCode: 10,
+            stackcardviewName: '0.0.1.0'
+    ]
+
+    groupId = 'com.aaa.tool'
+
+    sdk = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            buildToolsVersion: 30,
+
+            appVersionCode   : 10,
+            appVersionName   : '0.0.1.0',
+    ]
+
+    depVersions = [
+            appcompat       : "1.2.0",
+            constraintlayout: "2.0.4",
+            junit           : "4.12",
+            espresso        : "3.3.0",
+            runner          : "1.1.2"
+    ]
+
+    deps = [
+            appcompat       : "androidx.appcompat:appcompat:${depVersions.appcompat}",
+            constraintlayout: "androidx.constraintlayout:constraintlayout:${depVersions.constraintlayout}",
+
+            junit           : "junit:junit:${depVersions.junit}",
+            espresso        : "androidx.test.espresso:espresso-core:${depVersions.espresso}",
+            runner          : "androidx.test.ext:junit:${depVersions.runner}",
+
+    ]
+}

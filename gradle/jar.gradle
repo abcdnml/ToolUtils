@@ -1,0 +1,22 @@
+ext.makeJar = {
+    String jarName,
+    String jarFileDir,
+    String classDir,
+    List excludes,
+    Map metaInfo ->
+        task makeJarTask(type: Jar, group: "build",dependsOn: ['assembleRelease']) {
+            archiveName = jarName
+
+            from classDir
+
+            destinationDir = file(jarFileDir)
+
+            excludes.each {
+                exclude(it)
+            }
+
+            manifest {
+                attributes(metaInfo)
+            }
+        }
+}
