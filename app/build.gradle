@@ -28,6 +28,8 @@ dependencies {
     def deps = rootProject.ext.deps
     implementation deps.appcompat
     implementation deps.constraintlayout
+    implementation 'com.github.abcdnml.ToolUtils:stackcardview:0.0.1.0'
+    implementation 'com.github.abcdnml.ToolUtils:timepicker:0.0.1.0'
     testImplementation deps.junit
     androidTestImplementation deps.runner
     androidTestImplementation deps.espresso
